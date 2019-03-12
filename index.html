@@ -4,21 +4,33 @@
     <meta charset="utf-8">
     <title>Age Calculator</title>
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/date_calc.js"></script>
   </head>
   <body>
     <section>
       <h3>Age Calculator!</h3>
-      <form class="" action="index.html" method="POST">
-        <input type="date" name="birth_date"value="1998-11-07" id="birth_date" placeholder="Your Birthday">
-        <input type="submit" name="calculate" id="calculate" name="calculate"
-         value="Calculate">
-      </form>
+
+      <input type="date" name="birth_date"value="1998-11-07" id="birth_date" placeholder="Your Birthday">
+      <input type="button" name="calculate" id="calculate" name="calculate"
+       value="Calculate Age" onclick="calcAge()">
 
       <br><br>
-      You are :  <b id="age_num" name="age_num">
+      You are (script option 1):
+      <b id="age_num" name="age_num">
         <script type="text/javascript" src="js/first.js"></script>
+      </b> years old!
 
+      <br><br>
+      You are (script option 2):  
+      <b id="age_num" name="age_num">
+        <script type="text/javascript" src="js/findAge.js"></script>
       </b> years old.
+    </section>
+    <hr>
+    <section>
+      <div id="age"></div>
+      <br>  
+      <p id="demo"></p>
     </section>
 
   </body>

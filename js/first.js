@@ -1,9 +1,6 @@
-document.write(ageCal(new Date(
-  (birth_date.value).split('-')[0],
-  (birth_date.value).split('-')[1],
-  (birth_date.value).split('-')[2]
-  )
-))
+input_date = (birth_date.value).split('-');
+
+document.write(ageCal(new Date(input_date[0], input_date[1], input_date[2])))
 
 function ageCal(date1, date2) {
   date2 = date2 || new Date();
