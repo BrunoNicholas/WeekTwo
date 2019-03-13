@@ -8,6 +8,7 @@
 
 console.log(findPrime(10));
 
+// function to make a list of all prime numbers in the range
 function findPrime(max_num)
 {
  	primes  = [];
@@ -25,6 +26,7 @@ function findPrime(max_num)
  	return primes
  }
 
+// function to return true if prime and false if not
 function isPrime(num) {
 	for(var i = 2; i < num; i++)
     	if(num % i === 0) return false;
