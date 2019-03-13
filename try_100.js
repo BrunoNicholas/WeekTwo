@@ -9,7 +9,7 @@
  while(n < 105)
  {
  	console.log(above100(n));
- 	n++;
+ 	++n;
  }
 
  // console.log(above100(400));
