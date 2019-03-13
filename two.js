@@ -14,7 +14,8 @@
  	else {
  		//
  		console.log('Wrong input!\nEnter a new number greater than 100!');
- 		new_num = 105;
+ 		console.log('Using the input as: 105');
+   
  		above100(105)
  	}
  }
