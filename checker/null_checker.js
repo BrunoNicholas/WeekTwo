@@ -14,7 +14,7 @@ function checker()
 			console.log('The number ' + val + ' is greater than 1');
 		}
 		else if (val <0 ) {
-			console.log('');
+			console.log('Wow, you have entered a Zero! Hahaha!');
 		}
 		else if (val < 0) {
 			console.log('You have entered a zero');
