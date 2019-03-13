@@ -3,18 +3,30 @@ checker();
 
 function checker()
 {
-	num = prompt('Give me a number:');
+	// num = prompt('Give me a number:');
+	num = 455;
+
 	val = parseInt(num);
-	if (typeof(num) === typeof(1))
+	if (val != NaN)
 	{
-		alert('Abbort!\nYour user input is wrong! Enter numbers');
+		// alert('Correct! Enter numbers');
+		if (val >= 1) {
+			console.log('The number ' + val + ' is greater than 1');
+		}
+		else if (val <0 ) {
+			console.log('');
+		}
+		else if (val < 0) {
+			console.log('You have entered a zero');
+		}
+
+	}
+	else if (val === NaN && typeof(num) != 'number')
+	{
+		// alert('Abbort no strings!\nYour user input is wrong! Enter numbers');
 		checker();
 	}
-	else if (typeof(num) === 'string')
-	{
-		// 
-	}
-	else (true)
+	else
 	{
 		// 
 	}
